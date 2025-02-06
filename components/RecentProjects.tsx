@@ -3,6 +3,7 @@ import { projects } from "./data/data";
 import { div } from "three/examples/jsm/nodes/Nodes.js";
 import { PinContainer } from "./ui/Pin";
 import { FaLocationArrow } from "react-icons/fa6";
+import Link from "next/link";
 
 type Props = {};
 
@@ -56,9 +57,13 @@ const RecentProjects = (props: Props) => {
                     })}
                   </div>
                   <div className="flex justify-center items-center ">
-                    <p className="flex lg:text-xl md:text-xs text-sm text-purple ">
+                    <Link
+                      href={link}
+                      target="_blank"
+                      className="flex lg:text-xl md:text-xs text-sm text-purple "
+                    >
                       Check Live Site
-                    </p>
+                    </Link>
                     <FaLocationArrow className="ms-3" color="#cbacf9" />
                   </div>
                 </div>

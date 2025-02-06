@@ -56,12 +56,13 @@ const Hero = (props: Props) => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl ">
-            Hi, I&apos;m Jeevan, transforming ideas into digital solutions.
+            Hi, I&apos;m Jeevan, I build and maintain web interfaces with
+            seamless collaboration.
           </p>
 
-          <a href="#about">
+          <a href="#projects">
             <BorderMagicButton
-              title="Show my work"
+              title="Explore My Projects."
               icon={<FaLocationArrow />}
               position="RIGHT"
             />
