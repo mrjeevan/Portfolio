@@ -180,13 +180,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/mrjeevan",
   },
   {
     id: 2,
     img: "/twit.svg",
+    link: "https://x.com/m_r_jeevan",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/mrjeevan/",
   },
 ];
