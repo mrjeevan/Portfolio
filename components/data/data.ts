@@ -156,6 +156,7 @@ export const skills = [
   { title: "Node" },
   { title: "Strapi" },
   { title: "React Router" },
+  { title: "ThreeJs" },
   { title: "Material-UI" },
   { title: "Shadcn/ui" },
   { title: "Bootstrap" },
