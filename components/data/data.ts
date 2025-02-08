@@ -1,6 +1,9 @@
 export const navItems = [
+  { name: "Home", link: "#home" },
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
+  { name: "Skills", link: "#skills" },
+  { name: "Experience", link: "#experience" },
   // { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
@@ -145,35 +148,65 @@ export const companies = [
   },
 ];
 
+export const skills = [
+  { title: "React" },
+  { title: "Next.js" },
+  { title: "Redux Toolkit" },
+  { title: "MongoDb" },
+  { title: "Node" },
+  { title: "Strapi" },
+  { title: "React Router" },
+  { title: "Material-UI" },
+  { title: "Bootstrap" },
+  { title: "Tailwind CSS" },
+  { title: "Styled Components" },
+  { title: "JavaScript" },
+  { title: "TypeScript" },
+  { title: "HTML" },
+  { title: "CSS" },
+  { title: "SSG (Static Site Generation)" },
+  { title: "SSR (Server-Side Rendering)" },
+  { title: "CSR (Client-Side Rendering)" },
+];
+
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Software Engineer",
+    desc: "As a full-time front-end developer, I build responsive UIs with Next.js, React, Redux, and Tailwind, focusing on performance and UX optimization.",
+    date: "Aug 2022 - Present",
+    company: "ThoughtClan Technologies Pvt Ltd, Bangalore",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "/exp4.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Software Engineer (Intern)",
+    desc: "As a front-end intern, I built PoCs and practiced coding with Next.js, React, Redux, and Tailwind, learning responsive design",
+    date: "Apr 2022 - May 2024",
+    company: "ThoughtClan Technologies Pvt Ltd, Bangalore",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Full-stack Developer (Intern)",
+    desc: "As an intern, I used React, Material-UI, Bootstrap, and Styled Components to create engaging UIs while exploring new tools.",
+    date: "Apr 2021 - Aug 2021",
+    company: "Settyl, Remote",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "/exp1.svg",
   },
+
+  // {
+  //   id: 4,
+  //   title: "",
+  //   desc: "",
+  //   date:'',
+  //   company: "",
+  //   className: "md:col-span-2",
+  //   thumbnail: "/exp3.svg",
+  // },
 ];
 
 export const socialMedia = [

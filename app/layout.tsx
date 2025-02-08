@@ -6,26 +6,24 @@ import { ThemeProvider } from "next-themes";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "M R Jeevan",
-  description:
-    "A personal portfolio showcasing my work, experience, and skills as a UI Developer.",
+  title: "M R Jeevan | Portfolio",
+  description: "UI developer | software engineer with 2+ years of experience",
   openGraph: {
-    title: "M R Jeevan",
-    description:
-      "A personal portfolio showcasing my work, experience, and skills as a UI Developer.",
+    title: "M R Jeevan | Portfolio",
+    description: "UI developer | software engineer with 2+ years of experience",
     images: ["/og.png"],
   },
   twitter: {
     creator: "@m_r_jeevan",
     title: "Jeevan | Front-End Developer",
-    description:
-      "A personal portfolio showcasing my work, experience, and skills as a UI Developer.",
+    description: "UI developer | software engineer with 2+ years of experience",
     images: [
       {
         url: "https://mrjeevan.dev/og-image.jpg",
         alt: "Jeevan's Portfolio Preview",
       },
     ],
+    card: "summary_large_image",
   },
 
   keywords: [
