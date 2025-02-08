@@ -157,6 +157,7 @@ export const skills = [
   { title: "Strapi" },
   { title: "React Router" },
   { title: "Material-UI" },
+  { title: "Shadcn/ui" },
   { title: "Bootstrap" },
   { title: "Tailwind CSS" },
   { title: "Styled Components" },
