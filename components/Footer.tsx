@@ -7,12 +7,12 @@ type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <footer className="w-full pt-20 pb-10 " id="contact">
-      <div className="w-full overflow-hidden absolute left-0 bottom-0  min-h-96 ">
+    <footer className="w-full pt-20 pb-10 relative " id="contact">
+      <div className="w-full overflow-hidden absolute top-0 bottom-0 ">
         <img
           src="/footer-grid.svg"
           alt="grid"
-          className="w-full h-full opacity-50 "
+          className="w-full h-full object-cover"
         />
       </div>
       <div className="flex flex-col items-center">

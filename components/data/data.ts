@@ -178,7 +178,7 @@ export const workExperience = [
   {
     id: 1,
     title: "Software Engineer",
-    desc: "As a full-time front-end developer, I build responsive UIs with Next.js, React, Redux, and Tailwind, focusing on performance and UX optimization.",
+    desc: "Developing responsive and high-performance UIs with Next.js, React, Redux, and AntD, focusing on optimization, refactoring legacy code, and building flexible components. Contributing to Adaptive KYC development and custom UI libraries, including Redux integration to enhance maintainability and scalability.",
     date: "Aug 2022 - Present",
     company: "ThoughtClan Technologies Pvt Ltd, Bangalore",
     className: "md:col-span-2",
@@ -187,7 +187,7 @@ export const workExperience = [
   {
     id: 2,
     title: "Software Engineer (Intern)",
-    desc: "As a front-end intern, I built PoCs and practiced coding with Next.js, React, Redux, and Tailwind, learning responsive design",
+    desc: "Built proofs-of-concept with Next.js while exploring Material-UI, Strapi CMS, and API integrations. Experimented with building drag-and-drop dashboards and various charting libraries like Highcharts, D3, and AMCharts, leading to involvement in larger projects.",
     date: "Apr 2022 - May 2024",
     company: "ThoughtClan Technologies Pvt Ltd, Bangalore",
     className: "md:col-span-2",
@@ -196,7 +196,7 @@ export const workExperience = [
   {
     id: 3,
     title: "Full-stack Developer (Intern)",
-    desc: "As an intern, I used React, Material-UI, Bootstrap, and Styled Components to create engaging UIs while exploring new tools.",
+    desc: "Crafted engaging user interfaces using React, Material-UI, and Styled Components while exploring new tools. Gained hands-on experience in full-stack development, working on features like file uploads for back-office systems. Collaborated with senior engineers to understand the MERN stack and integrations with webhooks effectively.",
     date: "Apr 2021 - Aug 2021",
     company: "Settyl, Remote",
     className: "md:col-span-2",
