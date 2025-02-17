@@ -23,20 +23,26 @@ const RecentProjects = (props: Props) => {
               className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw] "
             >
               <PinContainer title={link} href={link}>
-                <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10 ">
+                <div
+                  className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10 p "
+                  style={{ perspective: "1000px" }}
+                >
                   <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d] ">
                     <img src="/bg.png" alt="background image" />
                   </div>
                   <img
                     src={img}
                     alt={title}
-                    className="z-10 absolute bottom-0"
+                    className="z-10 absolute bottom-0 scale-95"
+                    style={{
+                      transform: "rotateZ(16deg)",
+                    }}
                   />
                 </div>
-                <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 ">
+                <h1 className="font-bold lg:text-xl md:text-lg text-base line-clamp-1 ">
                   {title}
                 </h1>
-                <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2 ">
+                <p className="lg:text-lg lg:font-normal font-light text-sm line-clamp-3 text-gray-400 ">
                   {des}
                 </p>
 
@@ -46,7 +52,7 @@ const RecentProjects = (props: Props) => {
                       return (
                         <div
                           key={icon}
-                          className="border border-white/[0.2] rounded-full bg-black lg:w-10  lg:h-10  w-8 h-8 flex justify-center items-center "
+                          className="border-2 border-white/[0.2] rounded-full bg-slate-950 lg:w-10  lg:h-10  w-8 h-8 flex justify-center items-center "
                           style={{
                             transform: `translate(-${5 * index * 2}px)`,
                           }}

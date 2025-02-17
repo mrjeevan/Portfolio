@@ -44,7 +44,12 @@ const Footer = (props: Props) => {
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter background-blur-lg saturate-200 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
             >
               <a target="_blank" href={item.link}>
-                <img src={item.img} alt="social media" width={20} height={20} />
+                <img
+                  src={item.img}
+                  alt={`social media ${item.alt}`}
+                  width={20}
+                  height={20}
+                />
               </a>
             </div>
           ))}

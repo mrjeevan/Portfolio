@@ -74,11 +74,17 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "Old Portfolio",
-    des: "A place holder till i get new ones up",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://mrjeevan.github.io/",
+    title: "Kli-M8 - A Fast & Responsive Weather App",
+    des: "Kli-M8 is a modern weather app built with Vite, React, Tailwind CSS, and RTK Query, using the OpenWeather API for real-time updates. It lets users search cities, view weather details, save favorites, and switch between dark/light mode. Fully responsive and deployed on Vercel, it delivers a smooth and fast experience.",
+    img: "/projects/Kli-M8.png",
+    iconLists: [
+      "/technologies/VueJs.svg",
+      "/technologies/TailwindCss.svg",
+      "/technologies/TypeScript.svg",
+      "/technologies/Redux.svg",
+      "/technologies/Vercel.svg",
+    ],
+    link: "https://kli-m8.vercel.app",
   },
 ];
 
@@ -217,17 +223,20 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    img: "/links/Github.svg",
     link: "https://github.com/mrjeevan",
+    alt: "github",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/links/Twitter.svg",
     link: "https://x.com/m_r_jeevan",
+    alt: "twitter",
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: "/links/LinkedIn.svg",
     link: "https://www.linkedin.com/in/mrjeevan/",
+    alt: "linkedin",
   },
 ];
