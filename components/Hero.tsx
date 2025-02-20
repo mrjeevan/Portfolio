@@ -12,7 +12,6 @@ const examples = [
   "Prototyping with Precision and Speed",
   "Delivering Robust User-Centric Applications",
   "Enhancing Web Interfaces with Expertise",
-
   "Elevating Interfaces with Dynamic Functionality",
   "Infusing Creativity into Digital Spaces",
   "Empowering Interaction through Thoughtful Design",
@@ -23,7 +22,6 @@ const examples = [
   "Harmonizing Aesthetics with Seamless Performance",
   "Transforming Ideas into Digital Reality",
   "Building Future-Ready Web Interfaces",
-
   "Crafting Legendary Digital User Journeys",
 ];
 
@@ -56,8 +54,8 @@ const Hero = (props: Props) => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl ">
-            Hi, I&apos;m Jeevan, I build and maintain web interfaces with
-            seamless collaboration.
+            Hi, I&apos;m Jeevan, a MERN developer specializing in scalable,
+            high-performance web apps.
           </p>
 
           <a href="#projects">

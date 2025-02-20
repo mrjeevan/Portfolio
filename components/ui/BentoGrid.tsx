@@ -1,12 +1,11 @@
 "use client";
-import { cn } from "@/utils/cn";
-import { BackgroundGradientAnimation } from "./GradientBg";
-import { GlobeDemo } from "./GridGlobe";
-import Lottie from "react-lottie";
-import { useEffect, useState } from "react";
 import animationData from "@/components/data/confetti.json";
+import { cn } from "@/utils/cn";
+import { useEffect, useState } from "react";
+import { IoCodeDownloadOutline, IoCopyOutline } from "react-icons/io5";
+import Lottie from "react-lottie";
 import BorderMagicButton from "./BorderMagicButton";
-import { IoCopyOutline } from "react-icons/io5";
+import { BackgroundGradientAnimation } from "./GradientBg";
 
 export const BentoGrid = ({
   className,
@@ -108,13 +107,26 @@ export const BentoGridItem = ({
           )}
         >
           <div className="font-sans  font-extralight md:max-w-50 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-[99]">
-            {description}
+            {description} {/* common title for all cards */}
           </div>
           <div className="font-sans text-lg lg:text-3xl w-full font-bold z-50 ">
-            {title}
+            {title} {/* common description for all cards */}
           </div>
 
           {/* {id === 2 && <GlobeDemo />} */}
+          {id === 2 && (
+            <div className="mt-5 flex justify-center ">
+              <a
+                href="/resume/M_R_Jeevan_Resume.pdf"
+                target="_blank"
+                className="inline-flex h-12 animate-shimmer items-center justify-center rounded-3xl border border-[#ffffff0f] bg-[linear-gradient(110deg,#000,45%,#2f0b64,55%,#000)] bg-[length:200%_100%] px-6 text-white transition-colors shadow-lg text-md font-bold py-2 cursor-pointer"
+                style={{ boxShadow: "#6000b599 0px 0px 40px 3px" }}
+              >
+                <IoCodeDownloadOutline className="mr-4 text-2xl" />
+                Download Resume
+              </a>
+            </div>
+          )}
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2 ">
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-5">
@@ -151,7 +163,7 @@ export const BentoGridItem = ({
           )}
 
           {id === 6 && (
-            <div className="mt-5 relative">
+            <div className="mt-5 md:mt-0 relative">
               <div
                 className={`absolute -bottom-5 right-0 ${
                   emailCopied ? "block" : "block"

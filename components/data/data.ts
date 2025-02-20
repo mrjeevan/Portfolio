@@ -21,9 +21,9 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "Insights into my professional career so far.",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2 text-center ",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2 ",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "",
