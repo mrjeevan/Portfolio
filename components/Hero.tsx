@@ -54,7 +54,7 @@ const Hero = (props: Props) => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl ">
-            Hi, I&apos;m Jeevan, a MERN developer specializing in scalable,
+            Hi, I&apos;m Jeevan, a Frontend developer specializing in scalable,
             high-performance web apps.
           </p>
 
