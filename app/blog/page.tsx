@@ -19,3 +19,5 @@ export default async function BlogPage() {
     </div>
   );
 }
+
+export const revalidate = 60 * 60 * 24 * 1; // 172800 seconds (1 day)
