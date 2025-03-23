@@ -1,8 +1,21 @@
-export default async function Page({
+import MarkdownRenderer from "@/components/custom/MarkDownRenderer";
+import { getBlogAsMarkdown } from "@/lib/notion";
+import Markdown from "react-markdown";
+
+export default async function BlogPost({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 }) {
-  const { slug } = await params;
-  return <div>My Post: {slug}</div>;
+  const blog = await getBlogAsMarkdown(params.slug);
+  // const { page, markdown } = blog;
+  if (!blog) return <p>Not Found</p>;
+  const markdown = "# Hi, *Pluto*!";
+  return (
+    <div className="prose max-w-none mx-auto">
+      {/* <h1>{page.properties.Title.title[0]?.text.content}</h1> */}
+      {/* <Markdown>{blog.markdown.parent}</Markdown> */}
+      <MarkdownRenderer content={blog.markdown.parent} />
+    </div>
+  );
 }
