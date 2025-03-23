@@ -7,16 +7,16 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "M R Jeevan | Portfolio",
-  description: "UI developer | software engineer with 2+ years of experience",
+  description: "UI developer | software engineer with 3 years of experience",
   openGraph: {
     title: "M R Jeevan | Portfolio",
-    description: "UI developer | software engineer with 2+ years of experience",
+    description: "UI developer | software engineer with 3 years of experience",
     images: ["/og.png"],
   },
   twitter: {
     creator: "@m_r_jeevan",
     title: "Jeevan | Front-End Developer",
-    description: "UI developer | software engineer with 2+ years of experience",
+    description: "UI developer | software engineer with 3 years of experience",
     images: [
       {
         url: "https://mrjeevan.dev/og-image.jpg",
