@@ -1,7 +1,11 @@
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import { ImageResponse } from "next/og";
 import { README_CONTENT as C, TOKENS as T, parseAccents } from "../content";
 
-export const runtime = "edge";
+// Rendered once at build and served as static files; camo times out on slow renders.
+export const dynamic = "force-static";
+export const dynamicParams = false;
 
 // All sizes are 2x so images stay sharp when GitHub scales them down.
 const S = 2;
@@ -9,18 +13,20 @@ const S = 2;
 const CACHE =
   "public, max-age=86400, s-maxage=86400, stale-while-revalidate=604800";
 
+const FONT_DIR = join(process.cwd(), "app/api/readme/fonts");
+
 const fontFiles = {
-  400: new URL("../fonts/Inter-Regular.ttf", import.meta.url),
-  500: new URL("../fonts/Inter-Medium.ttf", import.meta.url),
-  700: new URL("../fonts/Inter-Bold.ttf", import.meta.url),
+  400: "Inter-Regular.ttf",
+  500: "Inter-Medium.ttf",
+  700: "Inter-Bold.ttf",
 } as const;
 
 async function loadFonts() {
-  const entries = Object.entries(fontFiles) as [string, URL][];
+  const entries = Object.entries(fontFiles) as [string, string][];
   return Promise.all(
-    entries.map(async ([weight, url]) => ({
+    entries.map(async ([weight, file]) => ({
       name: "Inter",
-      data: await fetch(url).then((r) => r.arrayBuffer()),
+      data: await readFile(join(FONT_DIR, file)),
       weight: Number(weight) as 400 | 500 | 700,
       style: "normal" as const,
     })),
@@ -406,6 +412,10 @@ const BUILDERS: Record<string, () => { w: number; h: number; node: JSX.Element }
   "footer.png": () => footer(FOOTER_DESKTOP),
   "footer-mobile.png": () => footer(FOOTER_MOBILE),
 };
+
+export function generateStaticParams() {
+  return Object.keys(BUILDERS).map((asset) => ({ asset }));
+}
 
 export async function GET(
   _req: Request,
