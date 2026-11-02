@@ -1,11 +1,14 @@
 "use client";
 import animationData from "@/components/data/confetti.json";
 import { cn } from "@/utils/cn";
+import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { IoCodeDownloadOutline, IoCopyOutline } from "react-icons/io5";
-import Lottie from "react-lottie";
 import BorderMagicButton from "./BorderMagicButton";
 import { BackgroundGradientAnimation } from "./GradientBg";
+
+// lottie-web touches `document` on import; Node 21+ has a global navigator.
+const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 
 export const BentoGrid = ({
   className,
